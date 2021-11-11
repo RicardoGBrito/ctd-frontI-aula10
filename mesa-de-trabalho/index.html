@@ -4,45 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Atividade Integradora</title>
     <style type="text/css">
         /* Coloque o código fonte da atividade aqui */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Montserrat;
+            width:100%;
+            
+            
+        }
+        .conteudo{
+            margin: 150px auto;
+            padding: 100px auto;
+            width: 700px;
+            height: 400px;
+            
+        }
 
+        .cartao{
+            background-color: rgba(206,222,235,208);
+            text-align: center;
+            float:left;
+            width:140px;
+            margin: 10px;
+            height: 300px;
+            border:2px solid black;
+            border-radius: 20px;
+            border:none;
+
+            
+        }
+
+        .cartao__icone{
+            position:relative;
+            bottom: 45px;
+            
+        }
+        #notebook{
+            width: 90px;
+            height:100px;
+            margin-bottom: 10px;
+        }
+        #monitor{
+            width:60px; 
+            height:90px;
+            margin-bottom: 20px;
+        }
+        #celular{
+            position:relative;
+            
+            width: 50px;
+            height:100px;
+            margin-bottom: 10px;
+
+        }
+        #lupa{
+            
+            width: 60px;
+            height: 80px;
+            margin-bottom: 30px;
+            
+        }
+        .cartao__corpo{
+            position:relative;
+            bottom: 70px;
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+        .cartao__titulo{
+            color:rgba(10,85,180,75);
+            font-size: 20px;
+            text-align: left;
+            padding-top: 10px;
+        }
+        .cartao__descricao{
+            font-size: 15px;
+            color: rgba(0,154,164,77);
+            font-weight:700;
+            text-align: left;
+            padding-top:10px;
+
+        }
+        .cartao__botao{
+            background-color:rgba(0,154,164,77);
+            color:white;
+            border-radius: 20px;
+            text-decoration: none;
+            padding:3px 25px;
+            position: relative;
+            bottom: -40px;
+            right:2px
+        }
+        
+        
+        .acesso{
+            position:relative;
+            bottom:1px;
+            
+        }
+        .acesso1{
+            position:relative;
+            
+            
+        }
+        .acesso2{
+            position:relative;
+            
+        }
+        .acesso3{
+            position:relative;
+            bottom:-65px;
+        }
+       
     </style>
 </head>
 <body>
     <!-- O código HTML pode ser alterado se considerarem necessário. -->
     <div class="conteudo">
         <div class="cartao">
-            <img class="cartao__icone" src="./imagens/img1.png" alt="">
+            
+            <img class="cartao__icone" id="monitor" src="./imagens/img1.png" alt="">
             <section class="cartao__corpo">
                 <h1 class="cartao__titulo">Nosso Clube de Vantagens</h1>
                 <p class="cartao__descricao">Tenha acesso a benefícios e vantagens exclusivas.</p>
-                <a class="cartao__botao" href="./">Acesse</a>
+                <a class="cartao__botao acesso" href="./">Acesse</a>
             </section>
         </div>
         <div class="cartao">
-            <img class="cartao__icone" src="./imagens/img2.png" alt="">
+            <img class="cartao__icone cel" id="celular" src="./imagens/img2.png" alt="">
             <section class="cartao__corpo">
                 <h1 class="cartao__titulo">Área do Associado</h1>
                 <p class="cartao__descricao">Área exclusiva para nossos associados.</p>
-                <a class="cartao__botao" href="./">Acesse</a>
+                <a class="cartao__botao acesso1" href="./">Acesse</a>
             </section>
         </div>
         <div class="cartao">
-            <img class="cartao__icone" src="./imagens/img3.png" alt="">
+            <img class="cartao__icone note" id="notebook" src="./imagens/img3.png" alt="">
             <section class="cartao__corpo">
                 <h1 class="cartao__titulo">Área do Consultor</h1>
                 <p class="cartao__descricao">Área exclusiva para nossos consultores.</p>
-                <a class="cartao__botao" href="./">Acesse</a>
+                <a class="cartao__botao acesso2" href="./">Acesse</a>
             </section>
         </div>
         <div class="cartao">
-            <img class="cartao__icone" src="./imagens/img4.png" alt="">
+            <img class="cartao__icone" id="lupa" src="./imagens/img4.png" alt="">
             <section class="cartao__corpo">
                 <h1 class="cartao__titulo">Rastreio</h1>
                 <p class="cartao__descricao">Monitore seu veículo em tempo real.</p>
-                <a class="cartao__botao" href="./">Acesse</a>
+                <a class="cartao__botao acesso3" href="./">Acesse</a>
             </section>
         </div>
     </div>
